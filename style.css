@@ -231,6 +231,10 @@ footer {
     display: block;
   }
 
+  .logo {
+    flex: 1;
+    width: 25px;
+  }
   #nav-menu {
     position: absolute;
     top: 70px;
