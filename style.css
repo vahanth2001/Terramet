@@ -18,14 +18,49 @@ body {
 }
 
 .hero {
+  position: relative;
   height: 90vh;
-  background: linear-gradient(to right, #000000cc, #00000088),
-              url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
+  overflow: hidden;
+}
+
+.slides {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
   display: flex;
   align-items: center;
-  color: white;
   padding: 50px;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 600px;
 }
 
 .hero h1 {
