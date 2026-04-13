@@ -8,20 +8,103 @@ body {
   width: auto;
 }
 
+/* Reset */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  background: #0a0a0a;
+  padding: 15px 40px;
+  background: #000;
 }
 
-.navbar a {
-  color: white;
-  margin-left: 20px;
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
   text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 10px;
+  transition: 0.3s;
 }
 
+/* Hover color (logo red) */
+.menu a:hover {
+  color: #ff2a2a;
+}
+
+/* Dropdown */
+.submenu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #111;
+  display: none;
+  flex-direction: column;
+  min-width: 180px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.submenu li {
+  padding: 10px;
+}
+
+.submenu a {
+  color: #fff;
+}
+
+/* Show dropdown */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* Dropdown hover */
+.submenu li:hover {
+  background: #ff2a2a;
+}
+
+/* CTA buttons */
+button {
+  background: #ff2a2a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #cc0000;
+}
+
+/* Sections tweak */
+.cta {
+  background: #000;
+  color: white;
+}
+
+.card {
+  border: 1px solid #ff2a2a;
+}
 .hero {
   position: relative;
   height: 90vh;
