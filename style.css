@@ -3,6 +3,19 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.logo img {
+  height: 40px;   /* adjust as needed */
+  width: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #0a0a0a;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
