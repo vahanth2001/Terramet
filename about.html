@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About - Terramet Ventures</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+<!-- NAVBAR LOAD -->
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <h1>About Us</h1>
+  <p>Building strong foundations for the future</p>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about">
+  <div class="text">
+    <h2>Who We Are</h2>
+    <p>
+      Terramet Ventures is a forward-thinking company focused on infrastructure, 
+      manufacturing, and technology-driven solutions. We invest in sustainable growth 
+      and innovative industries that shape the future.
+    </p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296" alt="">
+</section>
+
+<!-- MISSION & VISION -->
+<section class="focus">
+  <h2>Our Mission & Vision</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Mission</h3>
+      <p>To empower industries through innovation, investment, and sustainable development.</p>
+    </div>
+
+    <div class="card">
+      <h3>Vision</h3>
+      <p>To become a global leader in infrastructure and technology-driven ventures.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team">
+  <h2>Our Leadership</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>John Doe</h3>
+      <p>CEO & Founder</p>
+    </div>
+    <div class="card">
+      <h3>Jane Smith</h3>
+      <p>Director</p>
+    </div>
+    <div class="card">
+      <h3>Michael Lee</h3>
+      <p>Operations Head</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Let’s Build the Future Together</h2>
+  <button onclick="window.location.href='contact.html'">Contact Us</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Terramet Ventures. All rights reserved.</p>
+</footer>
+
+<!-- JS -->
+<script src="app.js"></script>
+
+<!-- LOAD NAVBAR -->
+<script>
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

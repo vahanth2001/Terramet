@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Services & Products - Terramet Ventures</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+<!-- NAVBAR LOAD -->
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <h1>Services & Products</h1>
+  <p>Delivering excellence across industries</p>
+</section>
+
+<!-- SERVICES -->
+<section class="focus">
+  <h2>Our Services</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Investment</h3>
+      <p>Strategic funding for high-growth ventures and infrastructure projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>Consulting</h3>
+      <p>Expert advisory to optimize business performance and scalability.</p>
+    </div>
+
+    <div class="card">
+      <h3>Advisory</h3>
+      <p>Guidance in financial planning, operations, and expansion strategies.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="portfolio">
+  <h2>Our Products & Divisions</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Terramet Pipes</h3>
+      <p>High-quality piping solutions for industrial and infrastructure needs.</p>
+    </div>
+
+    <div class="card">
+      <h3>Terramet Infra</h3>
+      <p>Infrastructure development with a focus on durability and sustainability.</p>
+    </div>
+
+    <div class="card">
+      <h3>Terramet Technologies</h3>
+      <p>Innovative tech solutions supporting modern industrial growth.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="about">
+  <div class="text">
+    <h2>Why Choose Terramet?</h2>
+    <p>
+      We combine deep industry expertise with innovation to deliver reliable, 
+      scalable, and future-ready solutions across multiple sectors.
+    </p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="">
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to Work With Us?</h2>
+  <button onclick="window.location.href='contact.html'">Contact Us</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Terramet Ventures. All rights reserved.</p>
+</footer>
+
+<!-- JS -->
+<script src="app.js"></script>
+
+<!-- LOAD NAVBAR -->
+<script>
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
