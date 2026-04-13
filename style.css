@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #0a0a0a;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  height: 90vh;
+  background: linear-gradient(to right, #000000cc, #00000088),
+              url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 50px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #00c896;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background: #f5f5f5;
+}
+
+.about {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+}
+
+.about img {
+  width: 50%;
+}
+
+.focus, .portfolio, .team {
+  padding: 50px;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background: #eee;
+  padding: 30px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.cta {
+  background: #00c896;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
