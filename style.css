@@ -21,7 +21,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background: #000;
+  background: #ffffff;
 }
 
 /* Logo */
@@ -41,7 +41,7 @@ ul {
 
 .menu a {
   text-decoration: none;
-  color: #fff;
+  color: #ff3131;
   font-weight: 500;
   padding: 8px 10px;
   transition: 0.3s;
