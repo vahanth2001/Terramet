@@ -646,3 +646,136 @@ body {
     align-items: center;
   }
 }
+/* ================= SERVICES PAGE (SP) ================= */
+
+/* HERO */
+.sp-hero {
+  height: 60vh;
+  position: relative;
+  background: url('terrametinfra.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.sp-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.3));
+}
+
+.sp-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 0 8%;
+  animation: spFadeUp 1s ease;
+}
+
+.sp-hero-content h1 {
+  font-size: 48px;
+}
+
+.sp-hero-content p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* SECTION */
+.sp-section {
+  padding: 80px 8%;
+  background: #fff;
+}
+
+/* GRID */
+.sp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.sp-card {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.sp-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+}
+
+/* OVERLAY */
+.sp-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  transition: 0.4s;
+}
+
+/* CONTENT */
+.sp-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  z-index: 2;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.sp-content h2 {
+  font-size: 24px;
+}
+
+.sp-content p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* HOVER ANIMATION */
+.sp-card:hover .sp-bg {
+  transform: scale(1.1);
+}
+
+.sp-card:hover .sp-overlay {
+  background: rgba(123,30,43,0.6);
+}
+
+.sp-card:hover .sp-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ENTRY ANIMATION */
+@keyframes spFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sp-card {
+  animation: spFadeUp 0.8s ease forwards;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  .sp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sp-hero-content h1 {
+    font-size: 32px;
+  }
+}
