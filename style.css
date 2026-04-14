@@ -166,34 +166,113 @@ button:hover {
   width: 50%;
 }
 
-.focus, .portfolio, .team {
-  padding: 50px;
-  text-align: center;
+/* ===== PREMIUM FUNDS ===== */
+.funds-section {
+  padding: 80px 60px;
+  background: #f7f7f7;
 }
 
-.grid {
+.funds-container {
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.funds-left {
+  flex: 1;
+}
+
+.funds-left h2 {
+  font-size: 36px;
+}
+
+.funds-left p {
+  color: #666;
+  margin-top: 10px;
+}
+
+/* RIGHT SIDE */
+.funds-right {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fund-item {
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
+
+.fund-item span {
+  font-size: 12px;
+  color: #999;
+}
+
+.fund-item h3 {
+  margin: 10px 0;
+}
+
+.fund-item p {
+  color: #6c4cff;   /* purple like screenshot */
+  font-size: 12px;
+}
+
+/* ===== ABOUT SPLIT ===== */
+.about-split {
+  display: flex;
+  align-items: center;
+  padding: 80px 60px;
+  gap: 60px;
+}
+
+.about-image img {
+  width: 350px;
+  border-radius: 5px;
+}
+
+.about-content {
+  max-width: 500px;
+}
+
+.about-content small {
+  color: #999;
+  letter-spacing: 1px;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.about-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.about-content button {
   margin-top: 20px;
+  background: #6c4cff; /* purple */
 }
 
-/* ================= CARDS ================= */
-.card {
-  background: #eee;
-  padding: 30px;
-  border-radius: 10px;
-  width: 150px;
-  border: 1px solid #ff2a2a;
-  transition: 0.3s;
-}
+/* ===== MOBILE FIX ===== */
+@media (max-width: 992px) {
+  .funds-container {
+    flex-direction: column;
+  }
 
-.card:hover {
-  transform: translateY(-8px);
-  background: #ff2a2a;
-  color: white;
-}
+  .funds-right {
+    flex-direction: column;
+    gap: 20px;
+  }
 
+  .about-split {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+}
 /* ================= CTA ================= */
 .cta {
   background: #ff2a2a;
