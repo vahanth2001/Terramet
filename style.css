@@ -281,7 +281,7 @@ button:hover {
 /* HERO */
 .about-hero {
   height: 60vh;
-  background: url('transmute.png') center/cover;
+  background-color:#ff3131;
   position: relative;
 }
 
@@ -312,7 +312,7 @@ button:hover {
 .about-card {
   flex: 1;
   padding: 20px;
-  border-bottom: 2px solid #ff3131;
+  border: 2px solid #ff3131;
   text-align: center;
 }
 
