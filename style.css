@@ -250,6 +250,10 @@ button:hover {
   padding-top: 15px;
   font-size: 14px;
 }
+
+.footer-hide {
+  display: none;
+}
 /* Responsive */
 /* Hamburger hidden on desktop */
 .hamburger {
