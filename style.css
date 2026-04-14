@@ -7,9 +7,11 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #ffffff;
+  background: #00000000;
   color: #222;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 /* NAVBAR */
@@ -17,17 +19,28 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 8%;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  position: sticky;
+  background: transparent;
+  border-bottom:none;
+  position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
 }
 
+.navbar.scrolled {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+}
+
+.logo {
+  background-color: #fff;
+  padding: 15px 5px;
+}
 .logo-text {
   font-family: 'EB Garamond', serif;
-  font-size: 28px;
+  font-size: 28px;;
   font-weight: 700;
   color: #7b1e2b;
 }
@@ -40,6 +53,7 @@ body {
   list-style: none;
   display: flex;
   gap: 30px;
+  padding: 20px;
 }
 
 .menu li a {
@@ -83,13 +97,14 @@ body {
   font-size: 26px;
   cursor: pointer;
 }
-
-/* HERO */
+/* HERO BASE */
 .hero {
-  height: 90vh;
   position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
+/* SLIDES */
 .slide {
   position: absolute;
   width: 100%;
@@ -97,18 +112,82 @@ body {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .slide.active {
   opacity: 1;
+  z-index: 1;
+}
+
+/* LEFT DARK PANEL */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.9) 35%,
+    rgba(0,0,0,0.6) 55%,
+    rgba(0,0,0,0.2) 75%,
+    transparent
+  );
+  z-index: 1;
+}
+
+/* CONTENT */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 2;
+  max-width: 550px;
+}
+
+/* TEXT STYLE */
+.hero-content small {
+  letter-spacing: 2px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin: 15px 0;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  opacity: 0.85;
+}
+
+/* BUTTON */
+.hero-content button {
+  padding: 12px 30px;
+  border: none;
+  background: #7b1e2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  background: #a52a2a;
 }
 
 .hero-content {
-  position: absolute;
-  bottom: 20%;
-  left: 8%;
-  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.slide.active .hero-content {
+  opacity: 1;
+  transform: translateY(-50%);
 }
 
 /* FUNDS */
