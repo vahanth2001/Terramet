@@ -33,7 +33,9 @@ body {
   border-bottom: 1px solid #eee;
   position: fixed;
 }
-
+.navbar.scrolled .menu li a {
+  color: #7b1e2b;
+}
 .logo {
   background-color: #fff;
   padding: 15px 5px;
@@ -58,13 +60,13 @@ body {
 
 .menu li a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: 500;
   transition: 0.3s;
 }
 
 .menu li a:hover {
-  color: #7b1e2b;
+  color: #000000;
 }
 
 /* DROPDOWN */
@@ -80,13 +82,15 @@ body {
   display: none;
   padding: 10px 0;
   min-width: 200px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);;
 }
 
 .submenu li {
   padding: 10px 20px;
 }
-
+.submenu li a {
+  color: #7b1e2b;
+}
 .dropdown:hover .submenu {
   display: block;
 }
@@ -102,6 +106,23 @@ body {
   position: relative;
   height: 100vh;
   overflow: hidden;
+}
+
+.dynamic-text {
+  display: inline-block;
+  color: #fff;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Animate when slide changes */
+.slide .dynamic-text {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.slide.active .dynamic-text {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* SLIDES */
@@ -124,13 +145,7 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0,0,0,0.9) 35%,
-    rgba(0,0,0,0.6) 55%,
-    rgba(0,0,0,0.2) 75%,
-    transparent
-  );
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
 
@@ -142,7 +157,7 @@ body {
   transform: translateY(-50%);
   color: #fff;
   z-index: 2;
-  max-width: 550px;
+  max-width: 750px;
 }
 
 /* TEXT STYLE */
@@ -157,6 +172,10 @@ body {
   font-weight: 700;
   margin: 15px 0;
   line-height: 1.2;
+}
+
+.hero-content h1::first-line {
+  color: #fff;
 }
 
 .hero-content p {
@@ -301,11 +320,11 @@ body {
 /* CTA */
 .cta {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 50px 8%;
   background: #7b1e2b;
   color: white;
+  flex-wrap: wrap;
 }
 
 .cta button {
@@ -314,6 +333,24 @@ body {
   background: white;
   color: #7b1e2b;
   cursor: pointer;
+}
+
+.logo-cta {
+  align-items: center;
+  gap: 15px;
+  background-color: #ffffff;
+  color: #7b1e2b;
+  padding: 2%;
+  border-radius: 25px;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;;
+  font-weight: 700;
+}
+
+.cta-content {
+  align-items: center;
+  gap: 15px;
+  padding: 2%;
 }
 
 /* FOOTER */
