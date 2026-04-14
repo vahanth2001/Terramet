@@ -226,12 +226,12 @@ button:hover {
 }
 
 .about-image img {
-  width: 350px;
+  width: 500px;
   border-radius: 5px;
 }
 
 .about-content {
-  max-width: 500px;
+  max-width: 1000px;
 }
 
 .about-content small {
