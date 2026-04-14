@@ -201,16 +201,9 @@ button:hover {
   width: 150px;
 }
 
-.cta {
-  background: #00c896;
-  color: white;
-  text-align: center;
-  padding: 50px;
-}
-
 .footer {
-  background: #000;
-  color: white;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
   padding: 50px 20px 20px;
 }
 
@@ -241,7 +234,7 @@ button:hover {
 }
 
 .footer a {
-  color: #ccc;
+  color: #000000;
   text-decoration: none;
   transition: 0.3s;
 }
