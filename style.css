@@ -385,7 +385,7 @@ body {
 }
 
 /* RESPONSIVE */
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
   .funds-container,
   .about-split,
   .cta {
@@ -417,6 +417,7 @@ body {
 
   .hamburger {
     display: block;
+    padding:10%
   }
 }
 /* ================= ABOUT PAGE (SAFE - NO CONFLICT) ================= */
@@ -551,10 +552,11 @@ body {
   }
 }
 /* ================= RESPONSIVE ================= */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 
   .hamburger {
     display: block;
+    padding: 5%;
   }
 
   #nav-menu {
