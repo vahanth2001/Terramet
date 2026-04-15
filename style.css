@@ -154,11 +154,11 @@ body {
 .hero-content {
   position: absolute;
   top: 50%;
-  left: 8%;
+  left: 30%;
   transform: translateY(-50%);
   color: #fff;
   z-index: 2;
-  max-width: 750px;
+  max-width: 60%;
 }
 
 /* TEXT STYLE */
