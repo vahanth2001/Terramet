@@ -38,25 +38,28 @@ document.addEventListener("DOMContentLoaded", () => {
   ====================== */
   const hamburger = document.getElementById("hamburger");
   const navMenu = document.getElementById("nav-menu");
+  const closeMenu = document.getElementById("close-menu");
 
   if (hamburger && navMenu) {
     hamburger.addEventListener("click", () => {
       navMenu.classList.toggle("active");
-      hamburger.textContent =navMenu.classList.contains("active") ? "✕" : "☰";
+
+      hamburger.textContent =
+        navMenu.classList.contains("active") ? "✕" : "☰";
+
+      document.body.classList.toggle("menu-open");
     });
   }
-  const closeMenu = document.getElementById("close-menu");
+
   if (closeMenu && navMenu) {
     closeMenu.addEventListener("click", () => {
       navMenu.classList.remove("active");
+      document.body.classList.remove("menu-open");
+      hamburger.textContent = "☰";
     });
   }
 
-  hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
 
-  document.body.classList.toggle("menu-open"); // 🔥 prevents background scroll
-});
   /* ======================
      MOBILE DROPDOWN
   ====================== */
@@ -69,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const submenu = this.nextElementSibling;
 
-        // Close others (clean UX)
         document.querySelectorAll(".submenu").forEach(menu => {
           if (menu !== submenu) menu.classList.remove("show");
         });
@@ -79,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-});
+}); // ✅ properly closed DOMContentLoaded
 
 
 /* ======================
