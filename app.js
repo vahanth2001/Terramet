@@ -1,28 +1,28 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
-  // ======================
-  // HERO SLIDER
-  // ======================
+  /* ======================
+     HERO SLIDER
+  ====================== */
   const slides = document.querySelectorAll(".slide");
   let index = 0;
   let interval;
 
-  function showSlide() {
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[index].classList.add("active");
-    index = (index + 1) % slides.length;
-  }
-
-  function startSlider() {
-    interval = setInterval(showSlide, 4000);
-  }
-
-  function stopSlider() {
-    clearInterval(interval);
-  }
-
-  // Start slider
   if (slides.length > 0) {
+
+    const showSlide = () => {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slides[index].classList.add("active");
+      index = (index + 1) % slides.length;
+    };
+
+    const startSlider = () => {
+      interval = setInterval(showSlide, 4000);
+    };
+
+    const stopSlider = () => {
+      clearInterval(interval);
+    };
+
     startSlider();
 
     const hero = document.querySelector(".hero");
@@ -32,9 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // ======================
-  // HAMBURGER MENU
-  // ======================
+
+  /* ======================
+     HAMBURGER MENU
+  ====================== */
   const hamburger = document.getElementById("hamburger");
   const navMenu = document.getElementById("nav-menu");
 
@@ -44,16 +45,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ======================
-  // MOBILE DROPDOWN
-  // ======================
-  const dropdowns = document.querySelectorAll(".dropdown > a");
 
-  dropdowns.forEach(item => {
-    item.addEventListener("click", function (e) {
+  /* ======================
+     MOBILE DROPDOWN
+  ====================== */
+  const dropdownLinks = document.querySelectorAll(".dropdown > a");
+
+  dropdownLinks.forEach(link => {
+    link.addEventListener("click", function (e) {
       if (window.innerWidth <= 992) {
         e.preventDefault();
+
         const submenu = this.nextElementSibling;
+
+        // Close others (clean UX)
+        document.querySelectorAll(".submenu").forEach(menu => {
+          if (menu !== submenu) menu.classList.remove("show");
+        });
+
         submenu.classList.toggle("show");
       }
     });
@@ -61,8 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-window.addEventListener("scroll", function () {
+
+/* ======================
+   NAVBAR SCROLL EFFECT
+====================== */
+window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
+
+  if (!navbar) return;
 
   if (window.scrollY > 50) {
     navbar.classList.add("scrolled");
