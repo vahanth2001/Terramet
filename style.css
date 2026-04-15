@@ -417,7 +417,7 @@ body {
 
   .hamburger {
     display: block;
-    padding:10%
+    margin: 1%;
   }
 }
 /* ================= ABOUT PAGE (SAFE - NO CONFLICT) ================= */
@@ -556,7 +556,7 @@ body {
 
   .hamburger {
     display: block;
-    padding: 5%;
+    margin:1%;
   }
 
   #nav-menu {
