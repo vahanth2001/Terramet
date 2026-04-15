@@ -230,6 +230,7 @@ body {
 .funds-section {
   padding: 80px 8%;
   background: #fafafa;
+  overflow-x: hidden;
 }
 
 .funds-container {
@@ -520,7 +521,7 @@ body {
   body.menu-open {
     overflow: hidden;
   }
-  
+
   .hamburger {
     display: block;
     z-index: 1100;
@@ -608,6 +609,12 @@ body {
 
   .about img {
     width: 100%;
+  }
+
+  .funds-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   .grid {
