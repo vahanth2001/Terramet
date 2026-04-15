@@ -471,7 +471,6 @@ body {
 /* DARK SECTION */
 .about-page-dark {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 40px;
   padding: 80px 8%;
   background: #111;
@@ -480,7 +479,6 @@ body {
 
 .about-page-dark-right {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
