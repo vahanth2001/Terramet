@@ -42,9 +42,15 @@ document.addEventListener("DOMContentLoaded", () => {
   if (hamburger && navMenu) {
     hamburger.addEventListener("click", () => {
       navMenu.classList.toggle("active");
+      hamburger.textContent =navMenu.classList.contains("active") ? "✕" : "☰";
     });
   }
-
+  const closeMenu = document.getElementById("close-menu");
+  if (closeMenu && navMenu) {
+    closeMenu.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+    });
+  }
 
   /* ======================
      MOBILE DROPDOWN
