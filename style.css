@@ -199,10 +199,22 @@ body {
   transition: 0.3s;
 }
 
+.fund-item button {
+  padding: 12px 30px;
+  border: none;
+  background: #7b1e2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .hero-content button:hover {
   background: #a52a2a;
 }
 
+.fund-item button:hover {
+  background: #a52a2a;
+}
 .hero-content {
   opacity: 0;
   transform: translateY(30px);
