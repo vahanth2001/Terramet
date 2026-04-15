@@ -517,6 +517,10 @@ body {
 /* ================= RESPONSIVE ================= */
 @media (max-width: 992px) {
 
+  body.menu-open {
+    overflow: hidden;
+  }
+  
   .hamburger {
     display: block;
     z-index: 1100;
@@ -527,7 +531,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 30%;
+    width: min(30%, 400px);
     height: 100vh;
     background: #c4121a;
 
@@ -538,6 +542,10 @@ body {
     flex-direction: column;
     padding-top: 80px;
     z-index: 1000;
+    box-sizing: border-box;   /* 🔥 IMPORTANT */
+    max-width: 100vw;         /* prevents overflow */
+    overflow-y: auto;         /* scroll if content too long */
+    overflow-x: hidden;       /* no horizontal scroll */
   }
 
   /* ACTIVE */

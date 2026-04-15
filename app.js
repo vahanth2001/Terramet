@@ -52,6 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+
+  document.body.classList.toggle("menu-open"); // 🔥 prevents background scroll
+});
   /* ======================
      MOBILE DROPDOWN
   ====================== */
