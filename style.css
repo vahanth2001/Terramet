@@ -355,7 +355,7 @@ body {
 
 /* FOOTER */
 .footer {
-  background: #111;
+  background: #ffffff;
   color: #ccc;
   padding: 50px 8%;
 }
@@ -368,7 +368,7 @@ body {
 
 .footer-col h3,
 .footer-col h4 {
-  color: white;
+  color: #7b1e2b;
   margin-bottom: 15px;
 }
 
@@ -381,12 +381,12 @@ body {
 }
 
 .footer-col a {
-  color: #ccc;
+  color: #7b1e2b;
   text-decoration: none;
 }
 
 .footer-col a:hover {
-  color: white;
+  color: #000000;
 }
 
 .footer-bottom {
