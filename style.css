@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+
 }
 
 /* NAVBAR */
@@ -154,7 +155,7 @@ body {
 .hero-content {
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 25%;
   transform: translateY(-50%);
   color: #fff;
   z-index: 2;
@@ -206,6 +207,7 @@ body {
   color: white;
   cursor: pointer;
   transition: 0.3s;
+  align-self: flex-end;
 }
 
 .hero-content button:hover {
@@ -229,19 +231,13 @@ body {
 /* FUNDS */
 .funds-section {
   padding: 80px 8%;
-  background: #fafafa;
+  background: #7b1e2b;
   overflow-x: hidden;
 }
 
 .funds-container {
   display: flex;
   gap: 50px;
-}
-
-.funds-left h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
-  color: #7b1e2b;
 }
 
 .funds-right {
@@ -251,6 +247,7 @@ body {
 }
 
 .fund-item {
+  width: 100%;
   background: #fff;
   padding: 25px;
   border: 1px solid #eee;
@@ -432,6 +429,9 @@ body {
   border-radius: 15px;
 }
 
+.about-page-content p {
+  text-align: justify;
+}
 .about-page-content h2 {
   font-size: 32px;
   margin: 15px 0;
@@ -446,6 +446,7 @@ body {
 .about-page-section {
   padding: 80px 8%;
   background: #fafafa;
+  text-align: justify;
 }
 
 .about-page-grid {
@@ -475,6 +476,7 @@ body {
   padding: 80px 8%;
   background: #111;
   color: white;
+  text-align: justify;
 }
 
 .about-page-dark-right {
