@@ -695,19 +695,22 @@ body {
 }
 /* BUTTON CONTAINER */
 .sp-section-button {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
   z-index: 3; /* above overlay */
 }
 
 /* BUTTON STYLE */
 .sp-section-button button {
+  flex : 1;
   background: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.4);
-  color: white;
+  color: rgb(0, 0, 0);
 
-  padding: 10px 18px;
+  padding: 5px;
   cursor: pointer;
 
   display: flex;
