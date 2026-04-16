@@ -425,7 +425,6 @@ body {
 
 .about-page-image img {
   width: 100%;
-  height: 100%;
   object-fit: contain;
   border-radius: 15px;
 }
@@ -527,6 +526,7 @@ body {
     display: block;
     z-index: 1100;
     margin: 1%;
+    width: 50px;
   }
 
   #nav-menu {
@@ -881,4 +881,148 @@ body {
   .cp-section {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 1000px) {
+
+  /* HERO */
+  .hero-content {
+    left: 10%;
+    max-width: 85%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content span {
+    font-size: 28px;
+  }
+
+  /* FUNDS */
+  .funds-container {
+    flex-direction: column;
+  }
+
+  .funds-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ABOUT INTRO */
+  .about-page-intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-page-hero-text {
+    max-width: 80%;
+  }
+
+  /* SERVICES */
+  .sp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+  .cp-section {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 765px) {
+
+  /* NAVBAR */
+  .logo {
+    padding: 12px;
+  }
+
+  .logo-text {
+    font-size: 22px;
+  }
+
+  .big-t {
+    font-size: 28px;
+  }
+
+  /* HERO */
+  .hero-content {
+    left: 5%;
+    max-width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .hero-content span {
+    font-size: 22px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .hero-content button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* FUNDS */
+  .funds-section {
+    padding: 50px 5%;
+  }
+
+  .funds-right {
+    grid-template-columns: 1fr;
+  }
+
+  /* ABOUT */
+  .about-content {
+    padding: 30px 20px;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  /* ABOUT PAGE */
+  .about-page-hero-text {
+    max-width: 100%;
+    padding: 0 5% 40px;
+  }
+
+  .about-page-hero-text h1 {
+    font-size: 28px;
+  }
+
+  /* SERVICES */
+  .sp-card {
+    height: 250px;
+  }
+
+  .sp-content h2 {
+    font-size: 18px;
+  }
+
+  .sp-content p {
+    font-size: 12px;
+  }
+
+  /* CONTACT */
+  .cp-section {
+    padding: 80px 5%;
+  }
+
+  .cp-card {
+    padding: 25px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
 }
