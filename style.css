@@ -737,12 +737,6 @@ body {
   color: #444;
 }
 
-/* RESPONSIVE */
-@media(max-width: 900px) {
-  .cp-section {
-    grid-template-columns: 1fr;
-  }
-}
 
 @media (max-width: 1000px) {
 
@@ -888,7 +882,9 @@ body {
 
 }
 @media(max-width: 900px) {
-
+  .cp-section {
+    grid-template-columns: 1fr;
+  }
   .about-page-intro,
   .about-page-dark {
     grid-template-columns: 1fr;
