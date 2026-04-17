@@ -208,7 +208,6 @@ body {
   color: white;
   cursor: pointer;
   transition: 0.3s;
-  align-self: flex-end;
 }
 
 .hero-content button:hover {
@@ -254,6 +253,7 @@ body {
   border: 1px solid #eee;
   transition: 0.3s;
   cursor: pointer;
+  align-content: flex-end;
 }
 
 .fund-item span {
