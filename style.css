@@ -1023,3 +1023,144 @@ body {
     font-size: 32px;
   }
 }
+@media (max-width: 375px) {
+
+  /* GLOBAL */
+  body {
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    height: 85vh;
+  }
+
+  .hero-content {
+    left: 5%;
+    max-width: 90%;
+    top: 55%;
+  }
+
+  .hero-content h1 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .hero-content span {
+    font-size: 16px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .hero-content button {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  /* NAV MENU */
+  #nav-menu {
+    width: 100%;
+    padding-top: 70px;
+  }
+
+  .menu li a {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  /* FUNDS */
+  .funds-section {
+    padding: 40px 4%;
+  }
+
+  .fund-item {
+    padding: 15px;
+  }
+
+  .fund-item h3 {
+    font-size: 14px;
+  }
+
+  /* ABOUT */
+  .about-content {
+    padding: 20px 10px;
+  }
+
+  .about-content h2 {
+    font-size: 20px;
+  }
+
+  /* ABOUT PAGE */
+  .about-page-intro {
+    padding: 40px 4%;
+  }
+
+  .about-page-content h2 {
+    font-size: 20px;
+  }
+
+  .about-page-content p {
+    font-size: 13px;
+  }
+
+  /* SERVICES */
+  .sp-card {
+    height: 200px;
+  }
+
+  .sp-content h2 {
+    font-size: 15px;
+  }
+
+  .sp-content p {
+    font-size: 11px;
+  }
+
+  /* CONTACT */
+  .cp-section {
+    padding: 50px 4%;
+  }
+
+  .cp-form h1 {
+    font-size: 22px;
+  }
+
+  .cp-form input,
+  .cp-form textarea {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .cp-card {
+    padding: 18px;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 25px 4%;
+  }
+
+  .logo-cta {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 30px 4%;
+  }
+
+  .footer-col h3,
+  .footer-col h4 {
+    font-size: 15px;
+  }
+
+  .footer-col p,
+  .footer-col a {
+    font-size: 12px;
+  }
+
+}
